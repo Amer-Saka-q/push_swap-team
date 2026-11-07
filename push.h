@@ -16,7 +16,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <limits.h>
-# include <stdio.h>//replace with ur own printf later
+# include <stdio.h>//replace with our own printf later
 
 typedef struct s_node
 {
@@ -31,7 +31,11 @@ int		dupee(t_stack *s, int number);
 int		valid(int ac, char **av, t_stack **a);
 int		free_split(char **s, t_stack **a);
 int		write_error(void);
+int		stack_size(t_stack *a);
+int		is_sorted(t_stack *a);
 void		print_stack(t_stack *a);
 void		free_stack(t_stack **a);
+void		test_sort(t_stack **a);
 t_stack		*stack_last(t_stack *s);
+double		calc(t_stack *a);
 #endif

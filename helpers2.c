@@ -54,4 +54,15 @@ void	free_stack(t_stack **a)
 		*a = t;
 	}
 }
+int	stack_size(t_stack *a)
+{
+	int count;
 
+	count = 0;
+	while (a)
+	{
+		count++;
+		a = a->next;
+	}
+	return (count);
+}

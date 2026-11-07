@@ -7,6 +7,8 @@ CFLAGS = -Wall -Werror -Wextra
 SRCS = ft_strcmp.c\
 	helpers.c\
 	helpers2.c\
+	helpers3.c\
+	operations.c\
 	push_atoi.c\
 
 OBJS = $(SRCS:.c=.o)
