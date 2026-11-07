@@ -97,7 +97,8 @@ int	valid(int ac, char **av, t_stack **a)
 		{
 			if (!push_atoi(valid[j], &number) || !dupee(*a, number))
 				return (free_split(valid, a));
-			push_stack(a, number);
+			if (push_stack(a, number) == 0)
+				return (free_split(valid, a));
 			j++;
 		}
 		free_split(valid, NULL);
